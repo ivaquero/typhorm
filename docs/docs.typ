@@ -1,3 +1,4 @@
+#import "@preview/typhorm:0.1.0": *
 #import "@local/typhorm:0.1.0": *
 #import "@preview/codly:1.3.0": codly, codly-init
 #import "@preview/codly-languages:0.1.8": codly-languages
