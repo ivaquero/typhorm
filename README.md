@@ -10,7 +10,7 @@ Import `typhorm` from the `@preview` namespace.
 #import "@preview/typhorm:0.1.0": *
 ```
 
-![example](https://raw.githubusercontent.com/ivaquero/typhorm/refs/heads/main/docs/example.png)
+![example](https://raw.githubusercontent.com/ivaquero/typhorm/refs/heads/main/docs/docs.png)
 
 For more details, see [examples.typ](https://github.com/ivaquero/typhorm/blob/main/docs/docs.typ).
 

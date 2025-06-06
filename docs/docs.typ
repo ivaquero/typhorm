@@ -24,6 +24,7 @@
 == Simple Boxes
 
 === title-box
+<title-box>
 
 ```typst
 #title-box[
@@ -34,18 +35,9 @@
 #title-box[
   #lorem(1)
 ]
-
-```typst
-title-box(
-  body,
-  size: 20pt,
-  inset: 12pt,
-  styles: default-styles,
-  info: default-info.global
-)
-```
 
 === tab-box
+<tab-box>
 
 ```typst
 #tab-box[
@@ -57,16 +49,8 @@ title-box(
   #lorem(3)
 ]
 
-```typst
-tab-box(
-  body,
-  height: auto,
-  inset: 8pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
 === body-box
+<body-box>
 
 ```typst
 #body-box[
@@ -77,20 +61,11 @@ tab-box(
 #body-box[
   #lorem(50)
 ]
-
-```typst
-body-box(
-  body,
-  height: auto,
-  inset: 8pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
 
 == Complex Boxes
 
 === idx-tab-body-box
+<idx-tab-body-box>
 
 ```typst
 #idx-tab-body-box(
@@ -105,21 +80,9 @@ body-box(
   [tab],
   [#lorem(20)],
 )
-
-```typst
-idx-tab-body-box(
-  idx,
-  tab,
-  col,
-  idx-ratio: 15%,
-  height-coef: 0.55pt,
-  tab-height: 24pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
 
 === idx-tab-body-box2
+<idx-tab-body-box2>
 
 ```typst
 #idx-tab-body-box2(
@@ -137,22 +100,8 @@ idx-tab-body-box(
   [#lorem(13)],
 )
 
-```typst
-idx-tab-body-box2(
-  idx,
-  tab,
-  col,
-  tab2,
-  col2,
-  idx-ratio: 15%,
-  height-coef: 0.55pt,
-  tab-height: 24pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
-
 === idx-body-box2
+<idx-body-box2>
 
 ```typst
 #idx-body-box2(
@@ -168,20 +117,8 @@ idx-tab-body-box2(
   [#lorem(25)],
 )
 
-```typst
-idx-body-box2(
-  idx,
-  col,
-  idx2,
-  col2,
-  idx-ratio: 15%,
-  height-coef: 0.55pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
-
 === idx-body-box
+<idx-body-box>
 
 ```typst
 #idx-body-box(
@@ -194,21 +131,11 @@ idx-body-box2(
   [idx],
   [#lorem(25)],
 )
-
-```typst
-idx-body-box(
-  idx,
-  col,
-  idx-ratio: 15%,
-  height-coef: 0.35pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
 
 == More Complex Boxes
 
 === idx-tab4-box
+<idx-tab4-box>
 
 ```typst
 #idx-tab4-box(
@@ -225,21 +152,8 @@ idx-body-box(
   [tab4],
 )
 
-```typst
-idx-tab4-box(
-  idx,
-  tab,
-  tab2,
-  tab3,
-  tab4,
-  idx-ratio: 15%,
-  tab-height: 24pt,
-  styles: default-styles,
-  info: default-info.global,
-)
-```
-
 === idx-body-mat23-box
+<idx-body-mat23-box>
 
 ```typst
 #idx-body-mat23-box(
@@ -261,24 +175,8 @@ idx-tab4-box(
   [#lorem(5)],
 )
 
-```typst
-idx-body-mat23-box(
-  idx,
-  body,
-  idx21,
-  idx31,
-  col21,
-  idx22,
-  idx32,
-  col22,
-  idx-ratio: 15%,
-  col-hcoefs: (0.6pt, 1.35pt),
-  styles: default-styles,
-  info: default-info.global,
-)
-```
-
 === body-mat31-box
+<body-mat31-box>
 
 ```typst
 #body-mat31-box(
@@ -298,6 +196,127 @@ idx-body-mat23-box(
   [idx3],
   [#lorem(5)],
 )
+
+= API
+
+== Simple Boxes
+
+```typst
+title-box(
+  body,
+  size: 20pt,
+  inset: 12pt,
+  styles: default-styles,
+  info: default-info.global
+)
+```
+
+```typst
+tab-box(
+  body,
+  height: auto,
+  inset: 8pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+```typst
+body-box(
+  body,
+  height: auto,
+  inset: 8pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+== Complex Boxes
+
+```typst
+idx-tab-body-box(
+  idx,
+  tab,
+  col,
+  idx-ratio: 15%,
+  height-coef: 0.55pt,
+  tab-height: 24pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+```typst
+idx-tab-body-box2(
+  idx,
+  tab,
+  col,
+  tab2,
+  col2,
+  idx-ratio: 15%,
+  height-coef: 0.55pt,
+  tab-height: 24pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+```typst
+idx-body-box2(
+  idx,
+  col,
+  idx2,
+  col2,
+  idx-ratio: 15%,
+  height-coef: 0.55pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+```typst
+idx-body-box(
+  idx,
+  col,
+  idx-ratio: 15%,
+  height-coef: 0.35pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+== More Complex Boxes
+
+```typst
+idx-tab4-box(
+  idx,
+  tab,
+  tab2,
+  tab3,
+  tab4,
+  idx-ratio: 15%,
+  tab-height: 24pt,
+  styles: default-styles,
+  info: default-info.global,
+)
+```
+
+```typst
+idx-body-mat23-box(
+  idx,
+  body,
+  idx21,
+  idx31,
+  col21,
+  idx22,
+  idx32,
+  col22,
+  idx-ratio: 15%,
+  col-hcoefs: (0.6pt, 1.35pt),
+  styles: default-styles,
+  info: default-info.global,
+)
+```
 
 ```typst
 body-mat31-box(
