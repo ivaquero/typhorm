@@ -1,0 +1,14 @@
+*
+!*.*
+!*/
+
+### macOS ###
+# General
+.DS_Store
+
+# Thumbnails
+._*
+
+.vscode
+articles
+test.*
