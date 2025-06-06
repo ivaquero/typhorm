@@ -2,6 +2,7 @@
 #import "@local/typmind:0.1.0": *
 
 #let info = toml("../0.1.0/config/info.toml").zh
+#set block(spacing: 0pt)
 
 #title-box(info: info)[
   *《大数据》专业基础课教案*
@@ -19,60 +20,59 @@
   #let data0 = csv("mindmap.csv")
   #let mmp = mmap-2layer(data0).body
   #mmp
-
 ]
 
-#ind-tab-body-box2(
-  "学习目标",
-  "知识点",
+#idx-tab-body-box2(
+  [学习目标],
+  [知识点],
   [#lorem(10)],
-  "素质目标",
+  [素质目标],
   [#lorem(50)],
 )
 
-#ind-tab-body-box(
-  "学习先觉知识",
-  "知识点",
+#idx-tab-body-box(
+  [学习先觉知识],
+  [知识点],
   [#lorem(20)],
 )
 
-#ind-body-ind-body-box(
-  "课上资源",
+#idx-body-box2(
+  [课上资源],
   [#lorem(50)],
-  "课下资源",
+  [课下资源],
   [#lorem(30)],
 )
 
-#ind-tab4-box(
-  "学习序列",
-  "学习目标",
-  "地点",
-  "时间",
-  "学习资源",
+#idx-body-box(
+  [活动目标],
+  [#lorem(25)],
 )
 
-#ind-body-mat23-box(
-  "学习序列",
-  [#lorem(25)],
-  "课上",
-  "60",
-  [#lorem(5)],
-  "课下",
-  "30",
-  [#lorem(5)],
+#idx-tab4-box(
+  [学习序列],
+  [学习目标],
+  [地点],
+  [时间],
+  [学习资源],
 )
 
-#ind-body-box(
-  "活动目标",
+#idx-body-mat23-box(
+  [学习序列],
   [#lorem(25)],
+  [课上],
+  [60],
+  [#lorem(5)],
+  [课下],
+  [30],
+  [#lorem(5)],
 )
 
 #body-mat31-box(
   [#lorem(25)],
-  "任务描述",
+  [任务描述],
   [#lorem(15)],
-  "任务时长",
+  [任务时长],
   [#lorem(5)],
-  "学习地点",
+  [学习地点],
   [#lorem(5)],
 )
