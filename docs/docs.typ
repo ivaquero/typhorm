@@ -65,35 +65,35 @@
 
 == Complex Boxes
 
-=== with-idx-tab-box
-<with-idx-tab-box>
+=== with-index-tab-box
+<with-index-tab-box>
 
 ```typst
-#with-idx-tab-box(
+#with-index-tab-box(
   [index],
   [tab],
   [#lorem(20)],
 )
 ```
 
-#with-idx-tab-box(
+#with-index-tab-box(
   [index],
   [tab],
   [#lorem(20)],
 )
 
-=== with-idx-tab-box2
-<with-idx-tab-box2>
+=== with-index-tab-box2
+<with-index-tab-box2>
 
 ```typst
-#with-idx-tab-box2(
+#with-index-tab-box2(
   [index],
   [tab1], [#lorem(13)],
   [tab2], [#lorem(13)],
 )
 ```
 
-#with-idx-tab-box2(
+#with-index-tab-box2(
   [index],
   [tab1],
   [#lorem(13)],
@@ -101,72 +101,72 @@
   [#lorem(13)],
 )
 
-=== with-idx-box2
-<with-idx-box2>
+=== with-index-box2
+<with-index-box2>
 
 ```typst
-#with-idx-box2(
-  [idx1], [#lorem(50)],
-  [idx2], [#lorem(25)],
+#with-index-box2(
+  [index1], [#lorem(50)],
+  [index2], [#lorem(25)],
 )
 ```
 
-#with-idx-box2(
-  [idx1],
+#with-index-box2(
+  [index1],
   [#lorem(50)],
-  [idx2],
+  [index2],
   [#lorem(25)],
 )
 
-=== with-idx-box
-<with-idx-box>
+=== with-index-box
+<with-index-box>
 
 ```typst
-#with-idx-box(
-  [idx],
+#with-index-box(
+  [index],
   [#lorem(25)],
 )
 ```
 
-#with-idx-box(
-  [idx],
+#with-index-box(
+  [index],
   [#lorem(25)],
 )
 
 == More Complex Boxes
 
-=== with-idx-tab4-box
-<with-idx-tab4-box>
+=== with-index-tab4-box
+<with-index-tab4-box>
 
 ```typst
-#with-idx-tab4-box(
-  [idx],
+#with-index-tab4-box(
+  [index],
   [tab], [tab2], [tab3], [tab4],
 )
 ```
 
-#with-idx-tab4-box(
-  [idx],
+#with-index-tab4-box(
+  [index],
   [tab],
   [tab2],
   [tab3],
   [tab4],
 )
 
-=== with-idx-mat32-box
-<with-idx-mat32-box>
+=== with-index-mat32-box
+<with-index-mat32-box>
 
 ```typst
-#with-idx-mat32-box(
-  [idx],
+#with-index-mat32-box(
+  [index],
   [#lorem(25)],
   [upper], [60], [#lorem(5)],
   [lower], [30], [#lorem(5)],
 )
 ```
 
-#with-idx-mat32-box(
-  [idx],
+#with-index-mat32-box(
+  [index],
   [#lorem(25)],
   [upper],
   [60],
@@ -182,19 +182,19 @@
 ```typst
 #with-mat31-box(
   [#lorem(25)],
-  [idx1], [#lorem(15)],
-  [idx2], [#lorem(5)],
-  [idx3], [#lorem(5)],
+  [index1], [#lorem(15)],
+  [index2], [#lorem(5)],
+  [index3], [#lorem(5)],
 )
 ```
 
 #with-mat31-box(
   [#lorem(25)],
-  [idx1],
+  [index1],
   [#lorem(15)],
-  [idx2],
+  [index2],
   [#lorem(5)],
-  [idx3],
+  [index3],
   [#lorem(5)],
 )
 
@@ -235,11 +235,11 @@ body-box(
 == Complex Boxes
 
 ```typst
-with-idx-tab-box(
-  idx,
+with-index-tab-box(
+  index,
   tab,
   col,
-  idx-ratio: 15%,
+  index-ratio: 15%,
   height-coef: 0.55pt,
   tab-height: 24pt,
   styles: default-styles,
@@ -248,13 +248,13 @@ with-idx-tab-box(
 ```
 
 ```typst
-with-idx-tab-box2(
-  idx,
+with-index-tab-box2(
+  index,
   tab,
   col,
   tab2,
   col2,
-  idx-ratio: 15%,
+  index-ratio: 15%,
   height-coef: 0.55pt,
   tab-height: 24pt,
   styles: default-styles,
@@ -263,12 +263,12 @@ with-idx-tab-box2(
 ```
 
 ```typst
-with-idx-box2(
-  idx,
+with-index-box2(
+  index,
   col,
-  idx2,
+  index2,
   col2,
-  idx-ratio: 15%,
+  index-ratio: 15%,
   height-coef: 0.55pt,
   styles: default-styles,
   info: default-info.global,
@@ -276,10 +276,10 @@ with-idx-box2(
 ```
 
 ```typst
-with-idx-box(
-  idx,
+with-index-box(
+  index,
   col,
-  idx-ratio: 15%,
+  index-ratio: 15%,
   height-coef: 0.35pt,
   styles: default-styles,
   info: default-info.global,
@@ -289,13 +289,13 @@ with-idx-box(
 == More Complex Boxes
 
 ```typst
-with-idx-tab4-box(
-  idx,
+with-index-tab4-box(
+  index,
   tab,
   tab2,
   tab3,
   tab4,
-  idx-ratio: 15%,
+  index-ratio: 15%,
   tab-height: 24pt,
   styles: default-styles,
   info: default-info.global,
@@ -303,16 +303,16 @@ with-idx-tab4-box(
 ```
 
 ```typst
-with-idx-mat32-box(
-  idx,
+with-index-mat32-box(
+  index,
   body,
-  idx21,
-  idx31,
+  index21,
+  index31,
   col21,
-  idx22,
-  idx32,
+  index22,
+  index32,
   col22,
-  idx-ratio: 15%,
+  index-ratio: 15%,
   col-hcoefs: (0.6pt, 1.35pt),
   styles: default-styles,
   info: default-info.global,
@@ -322,13 +322,13 @@ with-idx-mat32-box(
 ```typst
 with-mat31-box(
   body,
-  idx,
+  index,
   row,
-  idx2,
+  index2,
   row2,
-  idx3,
+  index3,
   row3,
-  idx-ratio: 50%,
+  index-ratio: 50%,
   col-hcoefs: (0.35pt, 1.05pt),
   styles: default-styles,
   info: default-info.global,
