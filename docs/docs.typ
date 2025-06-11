@@ -65,35 +65,35 @@
 
 == Complex Boxes
 
-=== idx-tab-body-box
-<idx-tab-body-box>
+=== with-idx-tab-box
+<with-idx-tab-box>
 
 ```typst
-#idx-tab-body-box(
+#with-idx-tab-box(
   [index],
   [tab],
   [#lorem(20)],
 )
 ```
 
-#idx-tab-body-box(
+#with-idx-tab-box(
   [index],
   [tab],
   [#lorem(20)],
 )
 
-=== idx-tab-body-box2
-<idx-tab-body-box2>
+=== with-idx-tab-box2
+<with-idx-tab-box2>
 
 ```typst
-#idx-tab-body-box2(
+#with-idx-tab-box2(
   [index],
   [tab1], [#lorem(13)],
   [tab2], [#lorem(13)],
 )
 ```
 
-#idx-tab-body-box2(
+#with-idx-tab-box2(
   [index],
   [tab1],
   [#lorem(13)],
@@ -101,51 +101,51 @@
   [#lorem(13)],
 )
 
-=== idx-body-box2
-<idx-body-box2>
+=== with-idx-box2
+<with-idx-box2>
 
 ```typst
-#idx-body-box2(
+#with-idx-box2(
   [idx1], [#lorem(50)],
   [idx2], [#lorem(25)],
 )
 ```
 
-#idx-body-box2(
+#with-idx-box2(
   [idx1],
   [#lorem(50)],
   [idx2],
   [#lorem(25)],
 )
 
-=== idx-body-box
-<idx-body-box>
+=== with-idx-box
+<with-idx-box>
 
 ```typst
-#idx-body-box(
+#with-idx-box(
   [idx],
   [#lorem(25)],
 )
 ```
 
-#idx-body-box(
+#with-idx-box(
   [idx],
   [#lorem(25)],
 )
 
 == More Complex Boxes
 
-=== idx-tab4-box
-<idx-tab4-box>
+=== with-idx-tab4-box
+<with-idx-tab4-box>
 
 ```typst
-#idx-tab4-box(
+#with-idx-tab4-box(
   [idx],
   [tab], [tab2], [tab3], [tab4],
 )
 ```
 
-#idx-tab4-box(
+#with-idx-tab4-box(
   [idx],
   [tab],
   [tab2],
@@ -153,11 +153,11 @@
   [tab4],
 )
 
-=== idx-body-mat23-box
-<idx-body-mat23-box>
+=== with-idx-mat32-box
+<with-idx-mat32-box>
 
 ```typst
-#idx-body-mat23-box(
+#with-idx-mat32-box(
   [idx],
   [#lorem(25)],
   [upper], [60], [#lorem(5)],
@@ -165,7 +165,7 @@
 )
 ```
 
-#idx-body-mat23-box(
+#with-idx-mat32-box(
   [idx],
   [#lorem(25)],
   [upper],
@@ -176,11 +176,11 @@
   [#lorem(5)],
 )
 
-=== body-mat31-box
-<body-mat31-box>
+=== with-mat31-box
+<with-mat31-box>
 
 ```typst
-#body-mat31-box(
+#with-mat31-box(
   [#lorem(25)],
   [idx1], [#lorem(15)],
   [idx2], [#lorem(5)],
@@ -188,7 +188,7 @@
 )
 ```
 
-#body-mat31-box(
+#with-mat31-box(
   [#lorem(25)],
   [idx1],
   [#lorem(15)],
@@ -235,7 +235,7 @@ body-box(
 == Complex Boxes
 
 ```typst
-idx-tab-body-box(
+with-idx-tab-box(
   idx,
   tab,
   col,
@@ -248,7 +248,7 @@ idx-tab-body-box(
 ```
 
 ```typst
-idx-tab-body-box2(
+with-idx-tab-box2(
   idx,
   tab,
   col,
@@ -263,7 +263,7 @@ idx-tab-body-box2(
 ```
 
 ```typst
-idx-body-box2(
+with-idx-box2(
   idx,
   col,
   idx2,
@@ -276,7 +276,7 @@ idx-body-box2(
 ```
 
 ```typst
-idx-body-box(
+with-idx-box(
   idx,
   col,
   idx-ratio: 15%,
@@ -289,7 +289,7 @@ idx-body-box(
 == More Complex Boxes
 
 ```typst
-idx-tab4-box(
+with-idx-tab4-box(
   idx,
   tab,
   tab2,
@@ -303,7 +303,7 @@ idx-tab4-box(
 ```
 
 ```typst
-idx-body-mat23-box(
+with-idx-mat32-box(
   idx,
   body,
   idx21,
@@ -320,7 +320,7 @@ idx-body-mat23-box(
 ```
 
 ```typst
-body-mat31-box(
+with-mat31-box(
   body,
   idx,
   row,
