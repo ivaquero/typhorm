@@ -72,14 +72,18 @@
 #with-index-tab-box(
   [index],
   [tab],
-  [#lorem(20)],
+  [
+    #lorem(20)
+  ]
 )
 ```
 
 #with-index-tab-box(
   [index],
   [tab],
-  [#lorem(20)],
+  [
+    #lorem(20)
+  ],
 )
 
 === with-index-tab-box2
@@ -88,17 +92,31 @@
 ```typst
 #with-index-tab-box2(
   [index],
-  [tab1], [#lorem(13)],
-  [tab2], [#lorem(13)],
+  [tab1],
+  [
+    - item1
+    - item2
+  ],
+  [tab2],
+  [
+    - item1
+    - item2
+  ],
 )
 ```
 
 #with-index-tab-box2(
   [index],
   [tab1],
-  [#lorem(13)],
+  [
+    - item1
+    - item2
+  ],
   [tab2],
-  [#lorem(13)],
+  [
+    - item1
+    - item2
+  ],
 )
 
 === with-index-box2
@@ -106,16 +124,30 @@
 
 ```typst
 #with-index-box2(
-  [index1], [#lorem(50)],
-  [index2], [#lorem(25)],
+  [index1],
+  [
+    - item1
+    - item2
+  ],
+  [index2],
+  [
+    - item1
+    - item2
+  ],
 )
 ```
 
 #with-index-box2(
   [index1],
-  [#lorem(50)],
+  [
+    - item1
+    - item2
+  ],
   [index2],
-  [#lorem(25)],
+  [
+    - item1
+    - item2
+  ],
 )
 
 === with-index-box
@@ -124,13 +156,19 @@
 ```typst
 #with-index-box(
   [index],
-  [#lorem(25)],
+  [
+    - item1
+    - item2
+  ],
 )
 ```
 
 #with-index-box(
   [index],
-  [#lorem(25)],
+  [
+    - item1
+    - item2
+  ],
 )
 
 == More Complex Boxes
@@ -159,21 +197,43 @@
 ```typst
 #with-index-mat32-box(
   [index],
-  [#lorem(25)],
-  [upper], [60], [#lorem(5)],
-  [lower], [30], [#lorem(5)],
+  [
+    - item1
+    - item2
+  ],
+  [upper],
+  [60],
+  [
+    - item1
+    - item2
+  ],
+  [lower],
+  [30],
+  [
+    - item1
+    - item2
+  ],
 )
 ```
 
 #with-index-mat32-box(
   [index],
-  [#lorem(25)],
+  [
+    - item1
+    - item2
+  ],
   [upper],
   [60],
-  [#lorem(5)],
+  [
+    - item1
+    - item2
+  ],
   [lower],
   [30],
-  [#lorem(5)],
+  [
+    - item1
+    - item2
+  ],
 )
 
 === with-mat31-box
@@ -181,21 +241,105 @@
 
 ```typst
 #with-mat31-box(
-  [#lorem(25)],
-  [index1], [#lorem(15)],
-  [index2], [#lorem(5)],
-  [index3], [#lorem(5)],
-)
-```
-
-#with-mat31-box(
-  [#lorem(25)],
+  [
+    - item1
+    - item2
+  ],
   [index1],
   [#lorem(15)],
   [index2],
   [#lorem(5)],
   [index3],
   [#lorem(5)],
+)
+```
+
+#with-mat31-box(
+  [
+    - item1
+    - item2
+  ],
+  [index1],
+  [#lorem(15)],
+  [index2],
+  [#lorem(5)],
+  [index3],
+  [#lorem(5)],
+)
+
+= Cases
+
+== Lesson Plans
+
+#set block(spacing: 0pt)
+#title-box()[
+  *Fundamental Python*
+]
+
+#tab-box()[
+  *General Scheme*
+]
+
+#with-index-tab-box2(
+  [goals],
+  [Knowledge Points],
+  [
+    - the `filter()` function
+    - the `map()` function
+    - the `reduce()` function
+  ],
+  [Proficiency],
+  [
+    - fluent in using builtin functions
+  ],
+)
+
+#with-index-tab-box(
+  [Preliminary Courses],
+  [Knowledge Points],
+  [
+    variable types; control flow;
+
+  ],
+)
+
+#with-index-box2(
+  [offline reference],
+  [
+    - Book: Python crash course
+  ],
+  [online reference],
+  [
+    - Video: Python for Beginners
+  ],
+)
+
+#with-index-tab4-box(
+  [activity],
+  [goals],
+  [loc.],
+  [time],
+  [reference],
+)
+
+#with-index-mat32-box(
+  [experiment],
+  [
+    - file manipulation
+    - calculation using builtin functions
+  ],
+  [offline],
+  [60 min],
+  [
+    - textbooks
+    - slides
+  ],
+  [online],
+  [30 min],
+  [
+    - videos
+    - books
+  ],
 )
 
 = API
