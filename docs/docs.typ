@@ -267,6 +267,8 @@
   [#lorem(5)],
 )
 
+#pagebreak()
+
 = Cases
 
 == Lesson Plans
