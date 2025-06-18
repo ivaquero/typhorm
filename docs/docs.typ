@@ -267,11 +267,80 @@
   [#lorem(5)],
 )
 
-#pagebreak()
-
 = Cases
 
 == Lesson Plans
+
+```typst
+#set block(spacing: 0pt)
+#title-box()[
+  *Fundamental Python*
+]
+
+#tab-box()[
+  *General Scheme*
+]
+
+#with-index-tab-box2(
+  [goals],
+  [Knowledge Points],
+  [
+    - the `filter()` function
+    - the `map()` function
+    - the `reduce()` function
+  ],
+  [Proficiency],
+  [
+    - fluent in using builtin functions
+  ],
+)
+
+#with-index-tab-box(
+  [Preliminary Courses],
+  [Knowledge Points],
+  [
+    variable types; control flow;
+
+  ],
+)
+
+#with-index-box2(
+  [offline reference],
+  [
+    - Book: Python crash course
+  ],
+  [online reference],
+  [
+    - Video: Python for Beginners
+  ],
+)
+```
+
+```typst
+#with-index-tab4-box(
+  [activity], [goals], [loc.], [time], [reference],
+)
+
+#with-index-mat32-box(
+  [experiment],
+  [
+    - file manipulation
+    - calculation using builtin functions
+  ],
+  [offline],
+  [60 min],
+  [
+    - textbooks
+    - slides
+  ],
+  [online],
+  [30 min],
+  [
+    - videos
+    - books
+  ],
+)
+```
 
 #set block(spacing: 0pt)
 #title-box()[
