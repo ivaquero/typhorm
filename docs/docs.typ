@@ -1,11 +1,9 @@
 #import "@preview/typhorm:0.1.0": *
 #import "@local/typhorm:0.1.0": *
 #import "@preview/codly:1.3.0": codly, codly-init
-#import "@preview/codly-languages:0.1.10": codly-languages
 
 #let code-block-style(body) = {
   codly(
-    languages: codly-languages,
     display-name: false,
     fill: rgb("#F2F3F4"),
     zebra-fill: none,
